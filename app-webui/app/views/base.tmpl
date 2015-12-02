@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ template "title" . }}</title>
+  <link rel="stylesheet" href="{{ .StaticFileHost }}/assets/css/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ .StaticFileHost }}/assets/css/main.css">
+  {{ template "css" . }}
+</head>
+<body>
+  <header>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand">{{ .AppName }}</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+  {{ template "content" . }}
+  </div>
+
+  <script type="text/javascript" src="{{ .StaticFileHost }}/assets/js/lib/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="{{ .StaticFileHost }}/assets/js/lib/bootstrap-v3.3.5-d.min.js"></script>
+  {{ if eq .Data.Mode "production"}}
+  <script type="text/javascript" src="{{ .StaticFileHost }}/assets/js/lib/react-0.14.3.min.js"></script>
+  <script type="text/javascript" src="{{ .StaticFileHost }}/assets/js/lib/react-dom-0.14.3.min.js"></script>
+  {{ else }}
+  <script type="text/javascript" src="{{ .StaticFileHost }}/assets/js/lib/react-0.14.3.js"></script>
+  <script type="text/javascript" src="{{ .StaticFileHost }}/assets/js/lib/react-dom-0.14.3.js"></script>
+  {{ end }}
+  <script type="text/javascript" src="{{ .StaticFileHost }}/assets/js/app.js"></script>
+  {{ template "js" . }}
+</body>
+</html>

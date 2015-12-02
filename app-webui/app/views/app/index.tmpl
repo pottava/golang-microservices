@@ -1,0 +1,57 @@
+{{ define "title" }}{{ .AppName }}{{ end }}
+{{ define "css" }}<link rel="stylesheet" href="{{ .StaticFileHost }}/assets/css/app/index.css">{{ end }}
+{{ define "js" }}
+{{ if eq .Data.Mode "production"}}
+<script type="text/javascript" src="{{ .StaticFileHost }}/assets/js/min/app/index.js"></script>
+{{ else }}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+<script type="text/babel" src="{{ .StaticFileHost }}/assets/js/app/index.jsx"></script>
+{{ end }}
+{{ end }}
+{{ define "content" }}
+
+  <div id="screen-name">
+    {{ if ne .Data.User.ID ""}}
+    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+      style="border-color: transparent;padding: 6px 5px;"><img src=""></img></a>
+    <ul class="dropdown-menu">
+      <li><a href="http://192.168.99.100:8080/twitter/logout">Logout</a></li>
+    </ul>
+    {{ else }}
+    <div style="margin: 13px 10px 0 0;">
+      <a class="btn btn-default" data-toggle="modal" data-target="#login">login</a>
+    </div>
+    {{ end }}
+  </div>
+
+  {{ if ne .Data.User.ID ""}}
+  <div class="navbar-collapse">
+    <h4 id="count">0 instance</h4>
+  </div>
+
+  <div id="data"></div>
+
+  {{ else }}
+
+  <div id="login" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title detail-title">Login</h3>
+          <hr>
+        </div>
+        <div class="modal-body" style="padding: 17px 15px 10px 15px;">
+
+          <div style="margin: 20px 0 40px 20px;">
+            <a href="http://192.168.99.100:8080/twitter">by Twitter</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{ end }}
+{{ end }}

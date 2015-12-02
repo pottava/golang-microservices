@@ -1,0 +1,39 @@
+auth:
+  build: app-authentication/
+  entrypoint: go run /go/src/github.com/pottava/golang-micro-services/app-authentication/main.go
+  ports:
+    - "8080:80"
+  environment:
+    - APP_SECURED_COOKIE=true
+    - APP_ACCESS_CONTROL_ALLOW_METHODS=GET
+    - APP_ACCESS_CONTROL_ALLOW_ORIGIN=?
+    - APP_TWITTER_CONSUMER_KEY
+    - APP_TWITTER_CONSUMER_SECRET
+    - APP_TWITTER_CONSUMER_CALLBACK
+  container_name: 'auth'
+
+aws:
+  build: app-aws/
+  entrypoint: go run /go/src/github.com/pottava/golang-micro-services/app-aws/main.go
+  environment:
+    - AWS_REGION
+    - AWS_ACCESS_KEY_ID
+    - AWS_SECRET_ACCESS_KEY
+  container_name: 'aws'
+
+dbio:
+  build: app-dbio/
+  entrypoint: go run /go/src/github.com/pottava/golang-micro-services/app-dbio/main.go
+  environment:
+    - AWS_REGION
+    - AWS_ACCESS_KEY_ID
+    - AWS_SECRET_ACCESS_KEY
+    - AWS_DYNAMODB_LOCAL
+  container_name: 'dbio'
+
+web:
+  build: app-webui/
+  entrypoint: go run /go/src/github.com/pottava/golang-micro-services/app-webui/main.go
+  ports:
+    - "80:80"
+  container_name: 'web'
