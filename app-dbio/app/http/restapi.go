@@ -21,17 +21,11 @@ const (
 	delete  = "DELETE"
 )
 
-// APICallback defines API callback interface
-type APICallback interface {
-	Response(w http.ResponseWriter, data interface{}) error
-}
-
 // APIStatus represents API's result status
 type APIStatus struct {
-	success  bool
-	code     int
-	message  string
-	callback *APICallback
+	success bool
+	code    int
+	message string
 }
 
 // APIResource represents RESTful API Interfaces
@@ -119,12 +113,6 @@ func APIResourceHandler(APIResource APIResource) http.HandlerFunc {
 			return
 		}
 
-		// if the callback is defined
-		if status.callback != nil {
-			(*status.callback).Response(w, data)
-			return
-		}
-
 		// Return API response
 		var content []byte
 		var e error
@@ -163,9 +151,4 @@ func Fail(code int, message string) APIStatus {
 // FailSimple means API finished unsuccessfully
 func FailSimple(code int) APIStatus {
 	return APIStatus{success: false, code: code, message: strconv.Itoa(code) + " " + http.StatusText(code)}
-}
-
-// Custom customize its behavior
-func Custom(callback APICallback) APIStatus {
-	return APIStatus{callback: &callback}
 }
