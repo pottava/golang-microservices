@@ -1,11 +1,11 @@
-Golang MicroServices
+Golang Microservices
 ---
 
 ## Description
 
 Go言語による マイクロサービスサンプル
 
-## Micro Services
+## Services
 
 Name               | Container Name  | Port (dev only)  | Description
 ------------------ | --------------- | ---------------- | ------------------
@@ -32,13 +32,13 @@ export AWS_ACCESS_KEY_ID=?
 export AWS_SECRET_ACCESS_KEY=?
 export APP_TWITTER_CONSUMER_KEY=?
 export APP_TWITTER_CONSUMER_SECRET=?
-export APP_TWITTER_CONSUMER_CALLBACK=http://192.168.99.100:8001/twitter/callback
+export APP_TWITTER_CONSUMER_CALLBACK=http://192.168.99.100:8080/twitter/callback
 ```
 
 ### 4. git cloneしたフォルダに移動し、コンテナを起動
 
 ```
-cd ~/src/github.com/pottava/golang-micro-services
+cd ~/src/github.com/pottava/golang-microservices
 docker-compose --x-networking up -d
 ```
 

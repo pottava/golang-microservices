@@ -7,7 +7,7 @@ import (
 	"math"
 	"os"
 
-	"github.com/pottava/golang-micro-services/app-authentication/app/config"
+	"github.com/pottava/golang-microservices/app-authentication/app/config"
 )
 
 var (

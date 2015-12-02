@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/pottava/golang-micro-services/app-aws/app/config"
-	_ "github.com/pottava/golang-micro-services/app-aws/app/controllers"
-	"github.com/pottava/golang-micro-services/app-aws/app/logs"
+	"github.com/pottava/golang-microservices/app-aws/app/config"
+	_ "github.com/pottava/golang-microservices/app-aws/app/controllers"
+	"github.com/pottava/golang-microservices/app-aws/app/logs"
 )
 
 func main() {

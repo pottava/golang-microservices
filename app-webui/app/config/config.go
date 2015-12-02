@@ -10,18 +10,18 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/pottava/golang-micro-services/app-webui/app/misc"
+	"github.com/pottava/golang-microservices/app-webui/app/misc"
 )
 
 func defaultConfig() Config {
 	gopath := os.Getenv("GOPATH")
 	return Config{
-		Name:           "GoMicroServices",
+		Name:           "GoMicroservices",
 		Port:           80,
 		LogLevel:       4,
 		Mode:           "production",
 		StaticFileHost: "",
-		StaticFilePath: gopath + "/src/github.com/pottava/golang-micro-services/app-webui/app",
+		StaticFilePath: gopath + "/src/github.com/pottava/golang-microservices/app-webui/app",
 		AccessLog:      true,
 		SecuredCookie:  false,
 	}
@@ -64,7 +64,7 @@ func toStringArray(values string) []string {
 }
 
 func fileConfig() Config {
-	path := misc.NVL(os.Getenv("CONFIG_FILE_PATH"), "/etc/golang-micro-services/config.json")
+	path := misc.NVL(os.Getenv("CONFIG_FILE_PATH"), "/etc/golang-microservices/config.json")
 	file, err := os.Open(path)
 	if err != nil {
 		return Config{}

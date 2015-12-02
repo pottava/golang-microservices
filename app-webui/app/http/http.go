@@ -13,9 +13,9 @@ import (
 	"time"
 
 	"github.com/justinas/alice"
-	"github.com/pottava/golang-micro-services/app-webui/app/config"
-	"github.com/pottava/golang-micro-services/app-webui/app/logs"
-	"github.com/pottava/golang-micro-services/app-webui/app/misc"
+	"github.com/pottava/golang-microservices/app-webui/app/config"
+	"github.com/pottava/golang-microservices/app-webui/app/logs"
+	"github.com/pottava/golang-microservices/app-webui/app/misc"
 )
 
 var cfg *config.Config

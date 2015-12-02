@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/pottava/golang-micro-services/app-authentication/app/logs"
-	"github.com/pottava/golang-micro-services/app-authentication/app/misc"
+	"github.com/pottava/golang-microservices/app-authentication/app/logs"
+	"github.com/pottava/golang-microservices/app-authentication/app/misc"
 )
 
 const (

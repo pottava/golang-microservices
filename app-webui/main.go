@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"path"
 
-	"github.com/pottava/golang-micro-services/app-webui/app/config"
-	"github.com/pottava/golang-micro-services/app-webui/app/controllers"
-	util "github.com/pottava/golang-micro-services/app-webui/app/http"
-	"github.com/pottava/golang-micro-services/app-webui/app/logs"
+	"github.com/pottava/golang-microservices/app-webui/app/config"
+	"github.com/pottava/golang-microservices/app-webui/app/controllers"
+	util "github.com/pottava/golang-microservices/app-webui/app/http"
+	"github.com/pottava/golang-microservices/app-webui/app/logs"
 )
 
 func main() {

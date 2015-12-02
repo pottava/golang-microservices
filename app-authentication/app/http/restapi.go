@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/pottava/golang-micro-services/app-authentication/app/logs"
-	"github.com/pottava/golang-micro-services/app-authentication/app/models"
+	"github.com/pottava/golang-microservices/app-authentication/app/logs"
+	"github.com/pottava/golang-microservices/app-authentication/app/models"
 )
 
 const (

@@ -10,12 +10,12 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/pottava/golang-micro-services/app-authentication/app/misc"
+	"github.com/pottava/golang-microservices/app-authentication/app/misc"
 )
 
 func defaultConfig() Config {
 	return Config{
-		Name:            "GoMicroServices-Authentication",
+		Name:            "GoMicroservices-Authentication",
 		Port:            80,
 		LogLevel:        4,
 		AccessLog:       true,
@@ -68,7 +68,7 @@ func toStringArray(values string) []string {
 }
 
 func fileConfig() Config {
-	path := misc.NVL(os.Getenv("CONFIG_FILE_PATH"), "/etc/golang-micro-services/config.json")
+	path := misc.NVL(os.Getenv("CONFIG_FILE_PATH"), "/etc/golang-microservices/config.json")
 	file, err := os.Open(path)
 	if err != nil {
 		return Config{}

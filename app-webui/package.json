@@ -1,14 +1,14 @@
 {
-  "name": "golang-micro-services",
+  "name": "golang-microservices",
   "version": "0.1.0",
   "description": "A web service which enables peaple to access AWS without any contracts.",
   "main": "app.js",
   "scripts": {
-    "test": "go test github.com/pottava/golang-micro-services/..."
+    "test": "go test github.com/pottava/golang-microservices/..."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pottava/golang-micro-services.git"
+    "url": "git+https://github.com/pottava/golang-microservices.git"
   },
   "keywords": [
     "AWS"
@@ -16,9 +16,9 @@
   "author": "nakamaru",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pottava/golang-micro-services/issues"
+    "url": "https://github.com/pottava/golang-microservices/issues"
   },
-  "homepage": "https://github.com/pottava/golang-micro-services#supinf-works-golang-micro-services",
+  "homepage": "https://github.com/pottava/golang-microservices#supinf-works-golang-microservices",
   "devDependencies": {
     "browserify": "^11.2.0",
     "gulp": "^3.9.0",

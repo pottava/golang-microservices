@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	app "github.com/pottava/golang-micro-services/app-dbio/app/config"
+	app "github.com/pottava/golang-microservices/app-dbio/app/config"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds"

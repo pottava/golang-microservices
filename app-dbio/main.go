@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/pottava/golang-micro-services/app-dbio/app/config"
-	_ "github.com/pottava/golang-micro-services/app-dbio/app/controllers"
-	"github.com/pottava/golang-micro-services/app-dbio/app/logs"
+	"github.com/pottava/golang-microservices/app-dbio/app/config"
+	_ "github.com/pottava/golang-microservices/app-dbio/app/controllers"
+	"github.com/pottava/golang-microservices/app-dbio/app/logs"
 )
 
 func main() {

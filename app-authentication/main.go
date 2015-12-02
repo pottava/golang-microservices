@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/pottava/golang-micro-services/app-authentication/app/config"
-	_ "github.com/pottava/golang-micro-services/app-authentication/app/controllers"
-	"github.com/pottava/golang-micro-services/app-authentication/app/logs"
+	"github.com/pottava/golang-microservices/app-authentication/app/config"
+	_ "github.com/pottava/golang-microservices/app-authentication/app/controllers"
+	"github.com/pottava/golang-microservices/app-authentication/app/logs"
 )
 
 func main() {

@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/justinas/alice"
-	"github.com/pottava/golang-micro-services/app-authentication/app/config"
-	"github.com/pottava/golang-micro-services/app-authentication/app/logs"
-	"github.com/pottava/golang-micro-services/app-authentication/app/misc"
+	"github.com/pottava/golang-microservices/app-authentication/app/config"
+	"github.com/pottava/golang-microservices/app-authentication/app/logs"
+	"github.com/pottava/golang-microservices/app-authentication/app/misc"
 )
 
 var cfg *config.Config

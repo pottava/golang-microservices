@@ -1,6 +1,6 @@
 auth:
   build: app-authentication/
-  entrypoint: go run /go/src/github.com/pottava/golang-micro-services/app-authentication/main.go
+  entrypoint: go run /go/src/github.com/pottava/golang-microservices/app-authentication/main.go
   ports:
     - "8080:80"
   environment:
@@ -14,7 +14,7 @@ auth:
 
 aws:
   build: app-aws/
-  entrypoint: go run /go/src/github.com/pottava/golang-micro-services/app-aws/main.go
+  entrypoint: go run /go/src/github.com/pottava/golang-microservices/app-aws/main.go
   environment:
     - AWS_REGION
     - AWS_ACCESS_KEY_ID
@@ -23,7 +23,7 @@ aws:
 
 dbio:
   build: app-dbio/
-  entrypoint: go run /go/src/github.com/pottava/golang-micro-services/app-dbio/main.go
+  entrypoint: go run /go/src/github.com/pottava/golang-microservices/app-dbio/main.go
   environment:
     - AWS_REGION
     - AWS_ACCESS_KEY_ID
@@ -33,7 +33,7 @@ dbio:
 
 web:
   build: app-webui/
-  entrypoint: go run /go/src/github.com/pottava/golang-micro-services/app-webui/main.go
+  entrypoint: go run /go/src/github.com/pottava/golang-microservices/app-webui/main.go
   ports:
     - "80:80"
   container_name: 'web'

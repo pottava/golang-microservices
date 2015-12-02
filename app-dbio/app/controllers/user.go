@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"net/url"
 
-	util "github.com/pottava/golang-micro-services/app-dbio/app/http"
-	"github.com/pottava/golang-micro-services/app-dbio/app/logs"
-	"github.com/pottava/golang-micro-services/app-dbio/app/misc"
-	"github.com/pottava/golang-micro-services/app-dbio/app/models"
+	util "github.com/pottava/golang-microservices/app-dbio/app/http"
+	"github.com/pottava/golang-microservices/app-dbio/app/logs"
+	"github.com/pottava/golang-microservices/app-dbio/app/misc"
+	"github.com/pottava/golang-microservices/app-dbio/app/models"
 )
 
 func init() {

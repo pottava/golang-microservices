@@ -7,7 +7,7 @@ import (
 	"math"
 	"os"
 
-	"github.com/pottava/golang-micro-services/app-webui/app/config"
+	"github.com/pottava/golang-microservices/app-webui/app/config"
 )
 
 var (

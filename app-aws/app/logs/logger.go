@@ -7,7 +7,7 @@ import (
 	"math"
 	"os"
 
-	"github.com/pottava/golang-micro-services/app-aws/app/config"
+	"github.com/pottava/golang-microservices/app-aws/app/config"
 )
 
 var (

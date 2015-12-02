@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/pottava/golang-micro-services/app-webui/app/config"
-	util "github.com/pottava/golang-micro-services/app-webui/app/http"
-	"github.com/pottava/golang-micro-services/app-webui/app/models"
+	"github.com/pottava/golang-microservices/app-webui/app/config"
+	util "github.com/pottava/golang-microservices/app-webui/app/http"
+	"github.com/pottava/golang-microservices/app-webui/app/models"
 )
 
 func init() {

@@ -10,10 +10,10 @@ import (
 	"strings"
 
 	"github.com/kurrik/oauth1a"
-	"github.com/pottava/golang-micro-services/app-authentication/app/config"
-	util "github.com/pottava/golang-micro-services/app-authentication/app/http"
-	"github.com/pottava/golang-micro-services/app-authentication/app/logs"
-	"github.com/pottava/golang-micro-services/app-authentication/app/models"
+	"github.com/pottava/golang-microservices/app-authentication/app/config"
+	util "github.com/pottava/golang-microservices/app-authentication/app/http"
+	"github.com/pottava/golang-microservices/app-authentication/app/logs"
+	"github.com/pottava/golang-microservices/app-authentication/app/models"
 )
 
 var (

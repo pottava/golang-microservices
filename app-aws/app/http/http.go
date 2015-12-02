@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/justinas/alice"
-	"github.com/pottava/golang-micro-services/app-aws/app/config"
-	"github.com/pottava/golang-micro-services/app-aws/app/logs"
-	"github.com/pottava/golang-micro-services/app-aws/app/misc"
+	"github.com/pottava/golang-microservices/app-aws/app/config"
+	"github.com/pottava/golang-microservices/app-aws/app/logs"
+	"github.com/pottava/golang-microservices/app-aws/app/misc"
 )
 
 var cfg *config.Config

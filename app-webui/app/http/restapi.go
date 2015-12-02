@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/pottava/golang-micro-services/app-webui/app/logs"
+	"github.com/pottava/golang-microservices/app-webui/app/logs"
 )
 
 const (

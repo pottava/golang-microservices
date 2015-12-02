@@ -7,7 +7,7 @@ package aws
 import (
 	"sync"
 
-	appcfg "github.com/pottava/golang-micro-services/app-dbio/app/config"
+	appcfg "github.com/pottava/golang-microservices/app-dbio/app/config"
 	awssdk "github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"

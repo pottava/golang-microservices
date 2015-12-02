@@ -7,7 +7,7 @@ import (
 	awssdk "github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/ec2"
-	"github.com/pottava/golang-micro-services/app-aws/app/logs"
+	"github.com/pottava/golang-microservices/app-aws/app/logs"
 )
 
 // Ec2Instance returns a specified ec2 instance

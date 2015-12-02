@@ -7,8 +7,8 @@ import (
 
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 
-	"github.com/pottava/golang-micro-services/app-dbio/app/aws"
-	"github.com/pottava/golang-micro-services/app-dbio/app/logs"
+	"github.com/pottava/golang-microservices/app-dbio/app/aws"
+	"github.com/pottava/golang-microservices/app-dbio/app/logs"
 )
 
 const userTable = "gomicroservices-users"

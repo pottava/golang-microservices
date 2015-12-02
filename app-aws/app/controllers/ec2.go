@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/pottava/golang-micro-services/app-aws/app/aws"
-	util "github.com/pottava/golang-micro-services/app-aws/app/http"
+	"github.com/pottava/golang-microservices/app-aws/app/aws"
+	util "github.com/pottava/golang-microservices/app-aws/app/http"
 )
 
 func init() {

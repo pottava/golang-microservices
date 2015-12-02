@@ -1,6 +1,6 @@
 auth:
   volumes:
-    - "./app-authentication/:/go/src/github.com/pottava/golang-micro-services/app-authentication/"
+    - "./app-authentication/:/go/src/github.com/pottava/golang-microservices/app-authentication/"
   environment:
     - APP_SECURED_COOKIE=false
     - APP_ACCESS_CONTROL_ALLOW_ORIGIN=http://192.168.99.100
@@ -10,7 +10,7 @@ aws:
   ports:
     - "8081:80"
   volumes:
-    - "./app-aws/:/go/src/github.com/pottava/golang-micro-services/app-aws/"
+    - "./app-aws/:/go/src/github.com/pottava/golang-microservices/app-aws/"
   environment:
     - APP_LOG_LEVEL=9
 
@@ -18,14 +18,14 @@ dbio:
   ports:
     - "8082:80"
   volumes:
-    - "./app-dbio/:/go/src/github.com/pottava/golang-micro-services/app-dbio/"
+    - "./app-dbio/:/go/src/github.com/pottava/golang-microservices/app-dbio/"
   environment:
     - AWS_DYNAMODB_LOCAL=true
     - APP_LOG_LEVEL=9
 
 web:
   volumes:
-    - "./app-webui/:/go/src/github.com/pottava/golang-micro-services/app-webui/"
+    - "./app-webui/:/go/src/github.com/pottava/golang-microservices/app-webui/"
   environment:
     - APP_MODE=development
     - APP_SECURED_COOKIE=false

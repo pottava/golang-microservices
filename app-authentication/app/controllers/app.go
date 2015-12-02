@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"net/url"
 
-	util "github.com/pottava/golang-micro-services/app-authentication/app/http"
-	"github.com/pottava/golang-micro-services/app-authentication/app/misc"
-	"github.com/pottava/golang-micro-services/app-authentication/app/models"
+	util "github.com/pottava/golang-microservices/app-authentication/app/http"
+	"github.com/pottava/golang-microservices/app-authentication/app/misc"
+	"github.com/pottava/golang-microservices/app-authentication/app/models"
 )
 
 func init() {
