@@ -1,6 +1,6 @@
 # Dockerfile
 
-FROM golang:1.5.1
+FROM pottava/golang:1.5
 MAINTAINER pottava
 
 RUN go get -u github.com/justinas/alice
